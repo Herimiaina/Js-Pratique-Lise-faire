@@ -1,0 +1,49 @@
+V1
+// - ça devrait avoir un endroit pour placer les "à faire" 
+// - ça devrait avoir un moyen d'afficher le "à faire"
+// - ça devrait avoir un moyen d'ajouter un nouvel "à faire"
+// - ça devrait avoir un moyen de modifier un "à faire"
+// - ça devrait avoir un moyen de supprimer un "à faire"
+
+V2
+// - Une fonction pour afficher les "à faire"
+// - Une fonction pour ajouter un nouvel "à faire"
+// - une fonction pour modifier les "à faire"
+// - une fonction pour supprimer les "à faire"
+
+V3
+// - entreposer l'array "à faire" dans un objet
+// - une méthode pour afficher les "à faire"
+// - une méthode pour ajouter un "à faire"
+// - une méthode pour éditer un "à faire"
+// - une méthode pour supprimer un "à faire"
+
+V4
+// - toDoList.addToDo ajoute aussi des objets
+// - toDoList.editToDo change la propriété texte de l'objet todo
+// - toDoList.toggleCompletee change la propriété completee
+
+V5
+// - displayToDos devrait montrer le text
+// - displayToDos devrait dire si la liste est vide
+// - displayToDos devrait dire "complete"
+
+V6
+// - si tout est checkée, tout déchecké
+// - si tout est déchecké, tout checkée
+
+V7
+//- idya un boutton displayToDos() et un boutton toogleAll()
+//- Cliquer sur le boutton "liste à faire" devrait lancer toDoList.displayToDos();
+//- Cliquer sur le boutton "toogle" devrait lancer toDoList.toogleAll();
+
+V8
+//- ida des controles pour .addToDo
+//- ida des controles pour .editToDo
+//- ida des controles pour .rmToDo
+//- ida des controles pour .toogleCompletee
+
+V9
+//- idya un élément li pour chaque todo
+//- chaque élément li devrait contenir un todo.text
+- chaque élément li devrait montrer .completee 

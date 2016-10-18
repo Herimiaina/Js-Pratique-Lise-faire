@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+    <h1>Checklists</h1>
+    
+    <div>
+      <button onclick="handlers.toogleAll()">Toggle All</button> 
+    </div>
+    
+    <div>
+      <input id="addTxtInP" type="text">
+      <button onclick="handlers.addToDo()">Ajouter</button>
+    </div>
+
+    <div>
+      <input id="positionToEdit" type="number">
+      <input id="newValue" type="text">
+      <button onclick="handlers.editToDo()">Edit</button>
+    </div>
+
+    <div>
+      <input id="positionToDelete" type="number">
+      <button onclick="handlers.rmToDo()">Remove</button>
+    </div>
+
+    <div>
+      <input id="positionToToogle" type="number">
+      <button onclick="handlers.toogleToDo()">Toogle</button>
+    </div>
+
+    <ol>
+    </ol>
+
+  <script type="text/javascript" src="main.js"></script> 
+  </body>
+</html>
