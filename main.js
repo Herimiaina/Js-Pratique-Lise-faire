@@ -94,7 +94,7 @@ var handlers = {
 			} else if (clickedBtn.className === "delete") {
 				this.supprimer(ordre);
 			}
-		});
+		}, this);
 	}
 }
 handlers.setEventListen();
