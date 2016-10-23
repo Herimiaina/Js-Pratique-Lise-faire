@@ -90,9 +90,9 @@ var handlers = {
 			var clickedBtn = event.target;
 			var ordre = parseInt(clickedBtn.parentNode.id);
 			if (clickedBtn.className === "check") {
-				this.checking(ordre);
+				handlers.checking(ordre);
 			} else if (clickedBtn.className === "delete") {
-				this.supprimer(ordre);
+				handlers.supprimer(ordre);
 			}
 		});
 	}
