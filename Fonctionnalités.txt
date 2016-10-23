@@ -46,4 +46,32 @@ V8
 V9
 //- idya un élément li pour chaque todo
 //- chaque élément li devrait contenir un todo.text
-- chaque élément li devrait montrer .completee 
+//- chaque élément li devrait montrer .completee 
+
+V10
+//- idya un moyent de créer un boutton delete
+//- un boutton pour chaque todo
+//- chaque li a un id référencant la position todo
+//- chaque boutton a accès à l'id todo
+- cliquer sur delete met à jour la liste et la dom
+
+V11
+- remplacer les for loops du view.displayToDos & toogleall par forEach
+
+V12
+//- Toogle Complete Button
+//- un boutton pour chaque todo
+//- un li a un id référencant la position todo
+//- le boutton a accès à l'id todo
+//- clic sur toogle met à jour la liste et la dom
+
+V13  Edit Clic texte
+- creer un évènement sur le texte
+- créer un boutton input sur click
+- cacher le texte
+- focus sur l'input et champ de caractère
+- creer en event enter
+- creer un event blur
+- input.value & position envoyer à toDoList.editToDo
+- supprimer l'input et montrer le texte 
+- afficher 

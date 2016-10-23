@@ -1,40 +1,27 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <!-- <link rel="stylesheet" href="style.css"> -->
-  </head>
-  <body>
-    <h1>Checklists</h1>
-    
-    <div>
-      <button onclick="handlers.toogleAll()">Toggle All</button> 
-    </div>
-    
-    <div>
-      <input id="addTxtInP" type="text">
-      <button onclick="handlers.addToDo()">Ajouter</button>
-    </div>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Application Least</title>
+</head>
+<body>
 
-    <div>
-      <input id="positionToEdit" type="number">
-      <input id="newValue" type="text">
-      <button onclick="handlers.editToDo()">Edit</button>
-    </div>
+<button onclick="view.afficher();">Init Test</button>
+<button onclick="handlers.toggleAll();">Toggle All</button>
 
-    <div>
-      <input id="positionToDelete" type="number">
-      <button onclick="handlers.rmToDo()">Remove</button>
-    </div>
+<div>
+	<input type="text" id="ajout">
+	<button onclick="handlers.ajouter();">Ajouter</button>
+</div>
 
-    <div>
-      <input id="positionToToogle" type="number">
-      <button onclick="handlers.toogleToDo()">Toogle</button>
-    </div>
+<div>
+	<input type="number" id="modifPosition">
+	<input type="text" id="modif">
+	<button onclick="handlers.modifier();">Modifier</button>
+</div>
 
-    <ol>
-    </ol>
+<ol></ol>
 
-  <script type="text/javascript" src="main.js"></script> 
-  </body>
+<script type="text/javascript" src="main.js"></script>
+</body>
 </html>
