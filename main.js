@@ -67,6 +67,8 @@ var handlers = {
 		uneListe.ajouter(ajout.value);
 		ajout.value = "";
 		view.afficher();
+		view.toggleDisplay();
+
 	},
 	modifier: function(){
 		var modif = document.getElementById("modif");
@@ -138,5 +140,9 @@ var view = {
 		btnDel.textContent = "Supprimer";
 		btnDel.className = "delete";
 		return btnDel;
+	},
+	toggleDisplay: function(){
+		var modifDisplay = document.getElementById("globalModif");
+		modifDisplay.style.display = "block";
 	}
 }
