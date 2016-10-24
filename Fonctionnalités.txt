@@ -1,4 +1,4 @@
-V1
+﻿V1
 // - ça devrait avoir un endroit pour placer les "à faire" 
 // - ça devrait avoir un moyen d'afficher le "à faire"
 // - ça devrait avoir un moyen d'ajouter un nouvel "à faire"
@@ -65,6 +65,9 @@ V12
 //- le boutton a accès à l'id todo
 //- clic sur toogle met à jour la liste et la dom
 
+V12
+Added display: block on clic afficher
+
 V13  Edit Clic texte
 - creer un évènement sur le texte
 - créer un boutton input sur click
@@ -75,3 +78,6 @@ V13  Edit Clic texte
 - input.value & position envoyer à toDoList.editToDo
 - supprimer l'input et montrer le texte 
 - afficher 
+
+V14
+- Add keypress et blur event

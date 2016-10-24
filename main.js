@@ -63,16 +63,16 @@ var handlers = {
 		view.afficher();
 	},
 	ajouter: function(){
-		var ajout = document.getElementById("ajout");
+		var ajout = document.getElementById("wrtInput");
 		uneListe.ajouter(ajout.value);
 		ajout.value = "";
 		view.afficher();
-		view.toggleDisplay();
+		// view.toggleDisplay();
 
 	},
 	modifier: function(){
-		var modif = document.getElementById("modif");
-		var position = document.getElementById("modifPosition");
+		var modif = document.getElementById("wrtModif");
+		var position = document.getElementById("choosePosition");
 		uneListe.modifier(position.valueAsNumber, modif.value);
 		modif.value = "";
 		position.value = "";
@@ -107,12 +107,15 @@ var view = {
 		var listeOl = document.querySelector("ol");
 		listeOl.innerHTML = "";
 
-		if (uneListe.liste.length === 0) {
-			listeOl.innerHTML = "vide";
+		if(uneListe.liste.length === 0) {
+			$("#modifier").css("display", "none");
+		} else {
+			$("#modifier").css("display", "block");
 		}
 
 		uneListe.liste.forEach(function(entree, index){
 			var listeIl = document.createElement("li");
+			listeIl.className="cf";
 			var textp = document.createElement("p");
 			var textComposition = "";
 
@@ -123,10 +126,16 @@ var view = {
 			}
 			listeIl.id = index + 1;
 			textp.textContent = textComposition;
-			listeIl.appendChild(textp);
 			listeIl.appendChild(this.createBtnCheck());
+			listeIl.appendChild(textp);
 			listeIl.appendChild(this.createBtnDel());
 			listeOl.appendChild(listeIl);
+			// if (entree.check === false) {
+			// 	debugger;
+			// 	$(".check").css("background", "rgba(250, 175, 0, 0.95)");
+			// } else {
+			// 	$(".check").css("background", "rgba(47, 175, 47, 0.95)");
+			// }
 		}, this);
 	},
 	createBtnCheck: function(){
@@ -137,12 +146,16 @@ var view = {
 	},
 	createBtnDel: function(){
 		var btnDel = document.createElement("button");
-		btnDel.textContent = "Supprimer";
+		btnDel.textContent = "Del";
 		btnDel.className = "delete";
 		return btnDel;
 	},
-	toggleDisplay: function(){
-		var modifDisplay = document.getElementById("globalModif");
-		modifDisplay.style.display = "block";
-	}
 }
+
+// Si .check = false => bg jaune
+// el bg vert
+
+// Si vide hide modifier
+
+//keypress & blur event
+

@@ -1,20 +1,97 @@
 * {
 	box-sizing: border-box;
 }
-
-body 
 ol {
-	padding: 2%;
-	background: #ca9;
+	padding: 0;
+}
+p, ol {
+	margin: 0;
+}
+input, button {
+	border: none;
+}
+button {
+	cursor: pointer;
+	color: #fff;
 }
 
+html {
+	background: #e6e6e6;
+}
+.cf:after {
+	content: "";
+	height: 0;
+	display: list-item;
+	clear: both;
+	overflow: hidden;
+} 
+.container {
+	min-width: 320px;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+#header h1 {
+	color: rgba(175, 47, 47, 0.15);
+	font-size: 6.25rem;
+	font-family: helvetica;
+	font-weight: 400;
+	text-align: center;
+}
 li {
-	background: #999;
-	padding: 1%;
-	
+	background:	 #fff;
+	list-style-position: inside;
+	list-style-type: none;
 }
-li p {
-	display: inline-block;
-	width: 40%;
+#modifier {
+	display: none;
 }
 
+#newInput, #modifier, li {
+	color: #4d4d4d;
+	line-height: 50px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),
+	0 25px 50px 0 rgba(0,0,0,0.1);
+	width: 400px;
+	margin: 0 auto;
+	height: 50px;
+}
+
+#toggleBtn, #choosePosition, .check {
+	width: 50px;
+	float: left;
+	height: 50px;
+	text-align: center;
+}
+#wrtInput, #wrtModif, p, #empty p {
+	width: 300px;
+	display:inline-block;
+	height: 50px;
+	padding: 0 20px;
+} 
+#addBtn, #modifBtn, .delete {
+	width: 50px;
+	float: right;
+	height: 50px;
+}
+.check {
+	margin-right: -4px;
+}
+.delete {
+	margin-left: -4px;
+}
+#modifier input {
+	box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+}
+#addBtn, #modifBtn {
+	background: rgba(47,175,175,0.95);
+}
+#toggleBtn {
+	background: rgba(175,175,175,0.95);
+}
+.delete {
+	background: rgba(175,47,47,0.95);
+}
+.check {
+	background: rgba(47, 175, 47, 0.95);
+}
